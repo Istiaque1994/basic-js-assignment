@@ -1,4 +1,4 @@
-// git link
+// https://github.com/Istiaque1994/basic-js-assignment
 
 /*--------------------------------------------------------
             First Function Name - kilometerToMeter
@@ -9,7 +9,7 @@ function kilometerToMeter(meter) {
     var kilometer = meter*1000; //formula of kilometer to meter.
 
     if (meter >= 0) {
-        return + kilometer; // If the value is positive.
+        return kilometer; // If the value is positive.
     } 
     else {
         return "Input can't be less than zero"; // If the value is negative.
@@ -29,15 +29,15 @@ console.log(convertResult);
 function budgetCalculator(watch, mobile, laptop) {
     var totalPrice = watch*50 + mobile*100 + laptop*500; //formula to find out the total price.
 
-    if (watch >= 0, mobile >= 0, laptop >= 0) {
-        return + totalPrice; // If the value is positive.
+    if (watch >= 0 && mobile >= 0 && laptop >= 0) {
+        return totalPrice; // If the value is positive.
     }
     else {
         return "Input can't be less than zero"; // If the value is negative.
     }
 }
 
-var budget = budgetCalculator(-1,0,0) //The first number is watch, the second number is mobile and the third number is laptop.
+var budget = budgetCalculator(1,0,0) //The first number is watch, the second number is mobile and the third number is laptop.
 console.log(budget);
 
 // End Second Function
