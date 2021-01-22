@@ -25,10 +25,10 @@ console.log(convertResult);
 --------------------------------------------------------*/
 
 // Applying Function.
-function budgetCalculator(watch, mobile, laptop) {
-    var totalPrice = watch*50 + mobile*100 + laptop*500; //formula to find out the total price.
+function budgetCalculator(numberWatch, numberMobile, numberLaptop) {
+    var totalPrice = numberWatch*50 + numberMobile*100 + numberLaptop*500; //formula to find out the total price.
 
-    if (watch >= 0 && mobile >= 0 && laptop >= 0) {
+    if (numberWatch >= 0 && numberMobile >= 0 && numberLaptop >= 0) {
         return totalPrice; // If the value is uper than zero.
     }
     else {
