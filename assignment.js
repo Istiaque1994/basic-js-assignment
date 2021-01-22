@@ -68,7 +68,7 @@ function hotelCost(perNight) {
     }
 }
 
-var totalNight = hotelCost(10);
+var totalNight = hotelCost(10); // Enter the valid day.
 console.log(totalNight);
 
 
