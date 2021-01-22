@@ -46,24 +46,31 @@ console.log(budget);
 
 // Applying Function.
 function hotelCost(perNight) {
+
+    // If there is no valid day.
     if (perNight < 1) {
-        return "Please enter a valid floor number";
+        return "Please enter a valid day";
     }
+    
+    // 1 to 10 days condition.
     else if (perNight >= 1 && perNight <= 10) {
         return perNight * 100;
     }
+
+    // 11 to 20 days condition.
     else if (perNight >= 11 && perNight <= 20) {
-        return perNight * 80;
+        return (10 * 100) + (perNight - 10) * 80;
     }
+
+    // 21 to the rest of the day's condition.
     else {
-        return perNight * 50;
+        return (10 * 100) + (10 * 80) + (perNight - 20) * 50;
     }
 }
 
-var totalNight = hotelCost(1);
+var totalNight = hotelCost(10);
 console.log(totalNight);
 
-// End Third Function
 
 /*-------------------------------------------------------
         Fourth Function Name - megaFriend
